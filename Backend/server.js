@@ -17,8 +17,7 @@ app.use(helmet());
 
 const allowedOrigins = [
   process.env.FRONTEND_URL || 'http://localhost:3000',
-  'https://component-generator-platform.vercel.app',
-  'https://component-generator-platform-4kapeacin-nikhil-p1905s-projects.vercel.app' 
+  process.env.PRODUCTION_URL
 ];
 
 
